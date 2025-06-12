@@ -1,15 +1,28 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.14)
+project(TaskScheduler)
 
-project(
-    labwork9
-    LANGUAGES CXX
+set(CMAKE_CXX_STANDARD 20)
+
+include_directories(${PROJECT_SOURCE_DIR}/lib)
+
+include(FetchContent)
+FetchContent_Declare(
+        googletest
+        URL https://github.com/google/googletest/archive/refs/heads/main.zip
+)
+FetchContent_MakeAvailable(googletest)
+
+enable_testing()
+
+add_executable(main bin/main.cpp)
+
+add_executable(tests
+        tests/scheduler_test.cpp
 )
 
-set(CMAKE_CXX_STANDARD 23)
+target_link_libraries(tests
+        gtest_main
+)
 
-include_directories(lib)
-
-add_subdirectory(bin)
-
-# enable_testing()
-# add_subdirectory(tests)
+include(GoogleTest)
+gtest_discover_tests(tests)

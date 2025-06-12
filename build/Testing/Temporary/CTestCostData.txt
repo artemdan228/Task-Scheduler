@@ -1,0 +1,15 @@
+SchedulerTest.AddAndExecuteTask 1 0.00644954
+SchedulerTest.MultipleTasks 1 0.005491
+SchedulerTest.DeferredExecution 1 0.00508517
+SchedulerTest.FutureResultUsage 1 0.00493912
+SchedulerTest.TaskReturnsTuple 2 0.00296381
+SchedulerTest.TaskReturnsPair 2 0.00282488
+SchedulerTest.FutureResultImplicitCast 2 0.00278779
+SchedulerTest.FutureExecutesLazily 2 0.00308133
+SchedulerTest.MultipleTasksIndependent 2 0.00336725
+SchedulerTest.GetResultIsConsistent 2 0.00340596
+SchedulerTest.TaskThrowsException 2 0.00330858
+SchedulerTest.LongComputation 2 0.00410556
+SchedulerTest.ResultWithoutExecuteDefaultBehavior 2 0.00364721
+SchedulerTest.LambdaWithCapture 2 0.00444575
+---
