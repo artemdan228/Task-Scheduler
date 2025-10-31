@@ -1,5 +1,0 @@
-if(EXISTS "/Users/artem/CLionProjects/labwork9-artemdan228/build/tests[1]_tests.cmake")
-  include("/Users/artem/CLionProjects/labwork9-artemdan228/build/tests[1]_tests.cmake")
-else()
-  add_test(tests_NOT_BUILT tests_NOT_BUILT)
-endif()
